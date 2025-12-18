@@ -115,9 +115,9 @@ SOFTWARE.
 
 ## Author
 
-GitHub: https://github.com/your-handle  
-Email: you@example.com  
-Public contact: https://x.com/your-handle  
+GitHub: https://github.com/driver-bail
+Email: driver-bail-0n@icloud.com
+Public contact: https://x.com/AshtonBrad73398  
 
 ---
 
