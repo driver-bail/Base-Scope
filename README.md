@@ -47,10 +47,9 @@ All interactions are read-only. No transactions are broadcast.
 
 - contracts/  
   Solidity contracts deployed to Base Sepolia for testnet validation:
-  - your_contract.sol — minimal contract used to validate deployment and verification flow  
-  - your_contract.sol — simple stateful contract for interaction testing  
-  - your_contract.sol — lightweight contract used for read-only query validation  
-
+  - ERC20.sol — contract implementing weighted voting using ERC20 tokens, allowing token claims, voting on issues with a quorum requirement, and managing token-based voting with custom error handling  
+  - ERC721.sol — contract for minting and sharing Haiku NFTs, with unique haiku validation, ERC721 token functionality, and custom error handling for duplicate haikus and ownership checks
+  
 - package.json  
   Dependency manifest including Coinbase SDKs and 2–5 repositories from the Base GitHub organization.
 
@@ -92,7 +91,7 @@ Expected result:
 
 MIT License
 
-Copyright (c) 2025 YOUR_NAME
+Copyright (c) 2025 
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -130,25 +129,19 @@ Network: Base Sepolia
 chainId (decimal): 84532  
 Explorer: https://sepolia.basescan.org  
 
-Contract #1 address:  
-your_address
+Contract "ERC20" address:  
+0x35662317ec7cc818dc2aa73845972e36e0eb3549
 
 Deployment and verification:
-- https://sepolia.basescan.org/address/your_address
-- https://sepolia.basescan.org/your_address/0#code  
+- https://sepolia.basescan.org/address/0x35662317ec7cc818dc2aa73845972e36e0eb3549
+- https://sepolia.basescan.org/0x35662317ec7cc818dc2aa73845972e36e0eb3549/0#code  
 
-Contract #2 address:  
-your_address
-
-Deployment and verification:
-- https://sepolia.basescan.org/address/your_address
-- https://sepolia.basescan.org/your_address/0#code  
-
-Contract #3 address:  
-your_address
+Contract "ERC721" address:  
+0x0f274f01d742610850c51edf7a77d00a92908271
 
 Deployment and verification:
-- https://sepolia.basescan.org/address/your_address
-- https://sepolia.basescan.org/your_address/0#code  
+- https://sepolia.basescan.org/address/0x0f274f01d742610850c51edf7a77d00a92908271
+- https://sepolia.basescan.org/0x0f274f01d742610850c51edf7a77d00a92908271/0#code  
+
 
 These testnet deployments provide a controlled environment for validating Base tooling, account abstraction flows, and read-only onchain interactions prior to Base Mainnet usage.
